@@ -20,3 +20,5 @@ if that fails too you may need to install python3-pip first (on Ubuntu/Debian)
 ```
 sudo apt-get install python3-pip
 ```
+
+in txtimg you can enter text and when you are finish, just enter an empty line
