@@ -12,7 +12,7 @@ font = ImageFont.truetype("Macondo-Regular.ttf", 56)
 img = Image.new("RGBA", (1920, 1080), (0,0,0,0))
 txtmg = Image.new("RGBA", (1920, 1080), (255,255,255,0))
 draw = ImageDraw.Draw(txtmg)
-cx, cy = draw.textsize(mtxt, font=font)
+_, _, cx, cy = draw.textbbox((0,0), mtxt, font=font)
 cx //= 2
 cy //= 2
 draw.text((960-cx, 540-cy), mtxt, font=font, fill=(47,197,247,255))
